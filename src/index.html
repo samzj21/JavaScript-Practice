@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profesores</title>
+</head>
+
+<body>
+    <header class="my-3">
+        <h1 class="text-center"> Profesores </h1>
+    </header>
+
+    <main class="container">
+
+        <section class="row text-center">
+            <article class="col-xs-12 col-md-6 mb-3">
+
+                <img class="img-fluid rounded" src="./assets/img/teachers1.jpg" alt="Profesores">
+
+            </article>
+            <article class="col-xs-12 col-md-6">
+
+                <form novalidate class="form-floating" id="teacherForm">
+
+                    <div id="containerId" class="form-floating mb-3 d-none">
+                        <input type="number" id="txtId" name="txtId" class="form-control" readonly disabled>
+                        <label for="txtId">Id de profesor</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" id="txtName" name="txtName" class="form-control" placeholder="Ejm: Yhoan">
+                        <label for="txtName">Nombre</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <textarea name="txtDescription" id="txtDescription" cols="30" rows="10" class="form-control"></textarea>
+                        <label for="txtDescription">Descripción</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="email" id="txtEmail" name="txtEmail" class="form-control" placeholder="Ejm: yhoan@gmail.com">
+                        <label for="txtEmail">Correo electrónico</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="date" id="txtBirthDate" name="txtBirthDate" class="form-control" placeholder="Ejm: 05/07/1993">
+                        <label for="txtBirthDate">Fecha de nacimiento</label>
+                    </div>
+
+                    <div class="row">
+                        <div class="d-grid col-md-6 mb-3">
+                            <button type="reset" id="btnCancel" class="btn btn-secondary">Cancelar</button>
+                        </div>
+                        <div class="d-grid col-md-6 mb-3">
+                            <button type="submit" id="btnSubmit" class="btn btn-success">Enviar</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </article>
+        </section>
+
+        <section class="row mt-3">
+
+            <div class="col-12">
+
+                <div class="table-responsive">
+
+                    <table id="tblTeachers" class="table table-hover table-bordered">
+
+                        <caption>
+                            Registros de los profesores
+                        </caption>
+
+                        <thead>
+
+                            <tr class="table-dark text-center">
+                                <th scope="col">
+                                    Id de profesor
+                                </th>
+                                <th scope="col">
+                                    Nombre
+                                </th>
+                                <th scope="col">
+                                    Descripción
+                                </th>
+                                <th scope="col">
+                                    Correo
+                                </th>
+                                <th scope="col">
+                                    Fecha nacimiento
+                                </th>
+                                <th scope="col">
+                                    Opciones
+                                </th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Derechos reservados por Samuel <em class="fa-regular fa-copyright"></em>
+    </footer>
+
+</body>
+
+</html>
